@@ -35,16 +35,19 @@ xerorexApp.controller('carouselCtrl', function ($scope) {
 			header: 'First Item',
 			description: 'This is a description',
 			href: '#/Learn More',
-			img: 'http://placehold.it/500x500'			
+			img: 'http://placehold.it/500x500',
+			buttonText: 'Learn more'			
 		},{
 			header: 'First Item',
 			description: 'This is a description',
 			href: '#/Learn More',
-			img: 'http://placehold.it/500x500'			
+			img: 'http://placehold.it/500x500',			
+			buttonText: 'Learn more'			
 		},{
 			header: 'First Item',
 			description: 'This is a description',
 			href: '#/Learn More',
-			img: 'http://placehold.it/500x500'			
+			img: 'http://placehold.it/500x500',			
+			buttonText: 'Learn more'			
 		}]
 })
