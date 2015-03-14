@@ -1,4 +1,6 @@
 var xerorexApp = angular.module('xerorexApp', []);
+
+// Navbar Controller
 xerorexApp.controller('navbarCtrl', function($scope){
 	$scope.menuItems = [
 	{
@@ -26,3 +28,23 @@ xerorexApp.controller('navbarCtrl', function($scope){
 		href: '#/Support'
 	}]
 });
+
+// Carousel controller
+xerorexApp.controller('carouselCtrl', function ($scope) {
+	$scope.carouselItems = [{
+			header: 'First Item',
+			description: 'This is a description',
+			href: '#/Learn More',
+			img: 'http://placehold.it/500x500'			
+		},{
+			header: 'First Item',
+			description: 'This is a description',
+			href: '#/Learn More',
+			img: 'http://placehold.it/500x500'			
+		},{
+			header: 'First Item',
+			description: 'This is a description',
+			href: '#/Learn More',
+			img: 'http://placehold.it/500x500'			
+		}]
+})
