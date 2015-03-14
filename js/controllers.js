@@ -6,7 +6,18 @@ xerorexApp.controller('navbarCtrl', function($scope){
 		href: '#/Discover'
 	},{
 		title: 'Products',
-		href: '#/Products'
+		href: '#/Products',
+		menuItems: [{
+			title: 'Phones',
+			href: '#/Products/Phones'
+		}, {
+			title: 'Televisions',
+			href: '#/Products/Televisions'
+		}, {
+			title: 'Wearables',
+			href: '#/Products/Wearables'
+		}
+		]
 	}, {
 		title: 'Apps',
 		href: '#/Apps'
