@@ -1,11 +1,10 @@
 #xerorex{
-	color: #222222;
-  	font-family: 'arial';
-  	background: rgb(252, 252, 252);
-  	padding: 2px 6px;
-  	border-radius: 2px;
-  	font-size: 21px;
-  	font-variant: small-caps;	
+	color: white;
+	font-family: 'arial';
+	border-radius: 2px;
+	font-size: 23px;
+	font-variant: small-caps;
+	letter-spacing: .5px;
 }
 
 img{
