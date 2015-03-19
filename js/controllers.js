@@ -56,19 +56,19 @@ xerorexApp.controller('carouselCtrl', function ($scope) {
 xerorexApp.controller('marketingCtrl', function($scope){
 	$scope.items = [{
 		header: 'Heading1',
-		img: 'img/chromebook-pixel.webp',
+		img: 'img/chromebook-pixel.png',
 		description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.',
 		btnText: 'View details',
 		href: '#/Marketing'
 	},{
 		header: 'Heading2',
-		img: 'img/nexus-6.webp',
+		img: 'img/nexus-6.png',
 		description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.',
 		btnText: 'View details',
 		href: '#/Marketing'
 	},{
 		header: 'Heading3',
-		img: 'img/nexus-7.webp',
+		img: 'img/nexus-7.png',
 		description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.',
 		btnText: 'View details',
 		href: '#/Marketing'
@@ -81,16 +81,16 @@ xerorexApp.controller('featuretteCtrl', function($scope){
 		header: 'First featurette heading.',
 		subHeader: "It'll blow your mind.",
 		description: 'Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.',
-		img: 'img/nest.webp'
+		img: 'img/nest.png'
 	},{
 		header: "Oh yeah, it's that good.",
 		subHeader: "See for yourself.",
 		description: 'Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.',
-		img: 'img/nexus-6.webp'
+		img: 'img/nexus-6.png'
 	},{
 		header: "And lastly, this one.",
 		subHeader: "Checkmate.",
 		description: 'Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.',
-		img: 'img/chromebook-pixel.webp'
+		img: 'img/chromebook-pixel.png'
 	},]
 });
