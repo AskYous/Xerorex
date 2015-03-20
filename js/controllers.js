@@ -78,8 +78,8 @@ xerorexApp.controller('marketingCtrl', function($scope){
 //Fueturette Controller
 xerorexApp.controller('featuretteCtrl', function($scope){
 	$scope.featurettes = [{
-		header: 'First featurette heading.',
-		subHeader: "It'll blow your mind.",
+		header: 'Say hello to the new thermostat.',
+		subHeader: "Goodbye old devices.",
 		description: 'Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.',
 		img: 'img/nest.png'
 	},{
@@ -92,5 +92,5 @@ xerorexApp.controller('featuretteCtrl', function($scope){
 		subHeader: "Checkmate.",
 		description: 'Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.',
 		img: 'img/chromebook-pixel.png'
-	},]
+	}]
 });
