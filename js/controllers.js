@@ -18,8 +18,7 @@ xerorexApp.controller('navbarCtrl', function($scope){
 		}, {
 			title: 'Wearables',
 			href: '#/Products/Wearables'
-		}
-		]
+		}]
 	}, {
 		title: 'Apps',
 		href: '#/Apps'
@@ -32,10 +31,10 @@ xerorexApp.controller('navbarCtrl', function($scope){
 // Carousel controller
 xerorexApp.controller('carouselCtrl', function ($scope) {
 	$scope.carouselItems = [{
-			header: 'Watch',
-			description: 'Our goal has always been to make powerful technology more accessible. More relevant. And ultimately, more personal. Apple Watch represents a new chapter in the relationship people have with technology. It’s the most personal product we’ve ever made, because it’s the first one designed to be worn.',
+			header: 'Televisions',
+			description: 'Explore the future of picture quality with this 60" 3D UHD 4K Smart TV that features a 3840 x 2160 native resolution for viewing high-resolution content. You can even upscale lower resolution material to near-4K picture quality.',
 			href: '#/Learn More',
-			img: 'img/apple-watch.jpg',
+			img: 'img/TV-4k-Curved.jpg',
 			btnText: 'Learn more'			
 		},{
 			header: 'Notebooks',
