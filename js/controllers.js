@@ -15,26 +15,10 @@ xerorexApp.controller('carouselCtrl', function ($scope, $http) {
 })
 
 // Marketing controller
-xerorexApp.controller('marketingCtrl', function($scope){
-	$scope.items = [{
-		header: 'Notebooks',
-		img: 'img/chromebook-pixel.png',
-		description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.',
-		btnText: 'View details',
-		href: '#/Marketing'
-	},{
-		header: 'Mobile',
-		img: 'img/nexus-6.png',
-		description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.',
-		btnText: 'View details',
-		href: '#/Marketing'
-	},{
-		header: 'Tablets',
-		img: 'img/nexus-7.png',
-		description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.',
-		btnText: 'View details',
-		href: '#/Marketing'
-	}];
+xerorexApp.controller('marketingCtrl', function($scope, $http){
+	$http.get('data/marketing-items.json').success(function (data) {
+		$scope.marketingItems = data;
+	});
 });
 
 //Fueturette Controller
