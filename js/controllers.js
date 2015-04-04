@@ -1,31 +1,10 @@
 var xerorexApp = angular.module('xerorexApp', []);
 
 // Navbar Controller
-xerorexApp.controller('navbarCtrl', function($scope){
-	$scope.menuItems = [
-	{
-		title: 'Discover',
-		href: '#/Discover'
-	},{
-		title: 'Products',
-		href: '#/Products',
-		menuItems: [{
-			title: 'Phones',
-			href: '#/Products/Phones'
-		}, {
-			title: 'Televisions',
-			href: '#/Products/Televisions'
-		}, {
-			title: 'Wearables',
-			href: '#/Products/Wearables'
-		}]
-	}, {
-		title: 'Apps',
-		href: '#/Apps'
-	}, {
-		title: 'Support',
-		href: '#/Support'
-	}]
+xerorexApp.controller('navbarCtrl', function($scope, $http){
+	$http.get('../data/menu-items.json').success(function (data) {
+		$scope.menuItems = data;
+	});
 });
 
 // Carousel controller
