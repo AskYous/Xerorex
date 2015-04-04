@@ -62,7 +62,7 @@
 
         <!-- NG-Repeat for each item -->
         <div ng-repeat="item in carouselItems" class="item" ng-class="{active: $index == 0}">
-          <img src="{{item.img}}">
+          <img ng-src="{{item.img}}">
           <div class="container">
             <div class="carousel-caption">
               <h1>{{item.header}}</h1>
@@ -91,7 +91,7 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div ng-repeat="item in items" class="col-lg-4">
-          <img class="img-circle" src="{{item.img}}" alt='{{item.header}} - {{item.description}}' style="width: 200px; height: 200px;">
+          <img class="img-circle" ng-src="{{item.img}}" alt='{{item.header}} - {{item.description}}' style="width: 200px; height: 200px;">
           <h2>{{item.header}}</h2>
           <p>{{item.description}}</p>
           <p><a class="btn btn-default" href="{{item.href}}" role="button">{{item.btnText}} &raquo;</a></p>
@@ -112,11 +112,11 @@
               <p class="lead">{{featurette.description}}</p>
             </div>
             <div class='col-md-5' ng-if='$even'>
-              <img class="featurette-image img-responsive" src="{{featurette.img}}" alt='{{featurette.heading}}'>
+              <img class="featurette-image img-responsive" ng-src="{{featurette.img}}" alt='{{featurette.heading}}'>
             </div>
 
             <div class='col-md-5' ng-if='$odd'>
-              <img class="featurette-image img-responsive" src="{{featurette.img}}" alt='{{featurette.heading}}'>
+              <img class="featurette-image img-responsive" ng-src="{{featurette.img}}" alt='{{featurette.heading}}'>
             </div>
             <div class='col-md-7' ng-if='$odd'>
               <h2 class="featurette-heading">{{featurette.header}} 
