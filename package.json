@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.12.3",
-    "jade": "*"
   },
   "devDependencies": {},
   "scripts": {

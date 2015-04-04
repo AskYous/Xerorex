@@ -2,7 +2,7 @@ var xerorexApp = angular.module('xerorexApp', []);
 
 // Navbar Controller
 xerorexApp.controller('navbarCtrl', function($scope, $http){
-	$http.get('../data/menu-items.json').success(function (data) {
+	$http.get('data/menu-items.json').success(function (data) {
 		$scope.menuItems = data;
 	});
 });
