@@ -103,7 +103,7 @@
 
       <hr class="featurette-divider">
       <div ng-controller='featuretteCtrl'>
-        <div ng-repeat='featurette in featurettes track by $index'>
+        <div ng-repeat='featurette in featuretteItems track by $index'>
           <div class="row featurette">
           <div class='col-md-7' ng-if='$even'>
               <h2 class="featurette-heading">{{featurette.header}} 
