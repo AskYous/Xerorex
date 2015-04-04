@@ -1,33 +1,17 @@
 var xerorexApp = angular.module('xerorexApp', []);
 
 // Navbar Controller
-xerorexApp.controller('navbarCtrl', function($scope, $http){
+xerorexApp.controller('navbarCtrl', function ($scope, $http){
 	$http.get('data/menu-items.json').success(function (data) {
 		$scope.menuItems = data;
 	});
 });
 
 // Carousel controller
-xerorexApp.controller('carouselCtrl', function ($scope) {
-	$scope.carouselItems = [{
-			header: 'Televisions',
-			description: 'Explore the future of picture quality with this 60" 3D UHD 4K Smart TV that features a 3840 x 2160 native resolution for viewing high-resolution content. You can even upscale lower resolution material to near-4K picture quality.',
-			href: '#/Learn More',
-			img: 'img/TV-4k-Curved.jpg',
-			btnText: 'Learn more'			
-		},{
-			header: 'Notebooks',
-			description: 'Boots in seconds. Nothing complicated to learn. Comes with your favorite Google apps. Built for everyday use and perfect for sharing with others. Starting at $199.',
-			href: '#/Learn More',
-			img: 'img/chromebook-hp-14.jpg',			
-			btnText: 'Learn more'			
-		},{
-			header: 'Wearables',
-			description: 'Android Wear organizes your information, suggests what you need, and shows it to you before you even ask. Get messages from your friends, meeting notifications, and weather updates at a glance.',
-			href: '#/Learn More',
-			img: 'img/wear.jpg',			
-			btnText: 'Learn more'			
-		}];
+xerorexApp.controller('carouselCtrl', function ($scope, $http) {
+	$http.get('data/carousel-items.json').success(function (data) {
+		$scope.carouselItems = data;
+	});
 })
 
 // Marketing controller
