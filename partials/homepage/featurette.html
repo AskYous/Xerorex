@@ -1,0 +1,26 @@
+<div ng-controller='featuretteCtrl'>
+  <div ng-repeat='featurette in featuretteItems track by $index'>
+    <div class="row featurette">
+    <div class='col-md-7' ng-if='$even'>
+        <h2 class="featurette-heading">{{featurette.header}}
+          <span class='text-muted'>{{featurette.subHeader}}</span>
+        </h2>
+        <p class="lead">{{featurette.description}}</p>
+      </div>
+      <div class='col-md-5' ng-if='$even'>
+        <img class="featurette-image img-responsive" ng-src="{{featurette.img}}" alt='{{featurette.heading}}'>
+      </div>
+
+      <div class='col-md-5' ng-if='$odd'>
+        <img class="featurette-image img-responsive" ng-src="{{featurette.img}}" alt='{{featurette.heading}}'>
+      </div>
+      <div class='col-md-7' ng-if='$odd'>
+        <h2 class="featurette-heading">{{featurette.header}}
+          <span class='text-muted'>{{featurette.subHeader}}</span>
+        </h2>
+        <p class="lead">{{featurette.description}}</p>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>

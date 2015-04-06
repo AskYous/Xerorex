@@ -27,7 +27,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><span id='xerorex'>XeroreX</span></a> 
+            <a class="navbar-brand" href="#"><span id='xerorex'>XeroreX</span></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -51,83 +51,18 @@
   </div>
 
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" ng-controller="carouselCtrl">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li ng-repeat="item in carouselItems track by $index" data-target="#myCarousel" data-slide-to="{{$index}}" ng-class="{active: $index == 0}"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-
-        <!-- NG-Repeat for each item -->
-        <div ng-repeat="item in carouselItems" class="item" ng-class="{active: $index == 0}">
-          <img ng-src="{{item.img}}">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>{{item.header}}</h1>
-              <p>{{item.description}}</p>
-              <p><a class="btn btn-lg btn-primary" href="{{item.href}}" role="button">{{item.btnText}}</a></p>
-            </div>
-          </div>
-        </div>
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div><!-- /.carousel -->
-    </div>
+    <!-- Carousel -->
+    <ng-include src="'partials/homepage/carousel.html'"></ng-include>
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing" ng-controller='marketingCtrl'>
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div ng-repeat="item in marketingItems" class="col-lg-4">
-          <img class="img-circle" ng-src="{{item.img}}" alt='{{item.header}} - {{item.description}}' style="width: 200px; height: 200px;">
-          <h2>{{item.header}}</h2>
-          <p>{{item.description}}</p>
-          <p><a class="btn btn-default" href="{{item.href}}" role="button">{{item.btnText}} &raquo;</a></p>
-        </div>
-      </div><!-- /.row -->
-
+    <div class="container">
+      <!-- Marketing -->
+      <ng-include src="'partials/homepage/marketing.html'"></ng-include>
 
       <!-- START THE FEATURETTES -->
-
       <hr class="featurette-divider">
-      <div ng-controller='featuretteCtrl'>
-        <div ng-repeat='featurette in featuretteItems track by $index'>
-          <div class="row featurette">
-          <div class='col-md-7' ng-if='$even'>
-              <h2 class="featurette-heading">{{featurette.header}} 
-                <span class='text-muted'>{{featurette.subHeader}}</span>
-              </h2>
-              <p class="lead">{{featurette.description}}</p>
-            </div>
-            <div class='col-md-5' ng-if='$even'>
-              <img class="featurette-image img-responsive" ng-src="{{featurette.img}}" alt='{{featurette.heading}}'>
-            </div>
-
-            <div class='col-md-5' ng-if='$odd'>
-              <img class="featurette-image img-responsive" ng-src="{{featurette.img}}" alt='{{featurette.heading}}'>
-            </div>
-            <div class='col-md-7' ng-if='$odd'>
-              <h2 class="featurette-heading">{{featurette.header}} 
-                <span class='text-muted'>{{featurette.subHeader}}</span>
-              </h2>
-              <p class="lead">{{featurette.description}}</p>
-            </div>
-          </div>
-          <hr>
-        </div>
-      </div>
+      <ng-include src="'partials/homepage/featurette.html'"></ng-include>
       <!-- /END THE FEATURETTES -->
 
 
