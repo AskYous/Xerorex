@@ -1,0 +1,1 @@
+var xerorexApp = angular.module('xerorexApp', ['xerorexControllers']);

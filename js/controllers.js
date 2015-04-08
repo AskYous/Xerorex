@@ -1,4 +1,4 @@
-var xerorexApp = angular.module('xerorexApp', []);
+var xerorexControllers = angular.module('xerorexControllers', []);
 
 // Navbar Controller
 xerorexApp.controller('navbarCtrl', function ($scope, $http){
