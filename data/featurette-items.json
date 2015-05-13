@@ -7,10 +7,10 @@
 	"header": "Oh yeah, it's that good.",
 	"subHeader": "See for yourself.",
 	"description": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
-	"img": "img/nexus-6.png"
+	"img": "img/tablets/nexus-6.png"
 },{
 	"header": "And lastly, this one.",
 	"subHeader": "Checkmate.",
 	"description": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
-	"img": "img/chromebook-pixel.png"
+	"img": "img/laptops/chromebook-pixel.png"
 }]
