@@ -1,18 +1,18 @@
 [{
 		"header": "Notebooks",
-		"img": "img/laptops/chromebook-pixel.png",
+		"img": "img/laptops/laptop-front.jpg",
 		"description": "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.",
 		"btnText": "View details",
 		"href": "#/Marketing"
 	},{
-		"header": "Mobile",
-		"img": "img/tablets/nexus-6.png",
+		"header": "Watches",
+		"img": "img/watches/watch-blue-circle-side.jpg",
 		"description": "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.",
 		"btnText": "View details",
 		"href": "#/Marketing"
 	},{
 		"header": "Tablets",
-		"img": "img/tablets/nexus-7.png",
+		"img": "img/tablets/tablet-and-phone.jpg",
 		"description": "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.",
 		"btnText": "View details",
 		"href": "#/Marketing"
