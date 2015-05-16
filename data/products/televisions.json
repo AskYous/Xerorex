@@ -1,0 +1,16 @@
+[{
+	"title": "This first TV",
+	"img": "tv-black.jpg",
+	"description": "This is a description of some tv. It is a great tv with specifications such as so and so.",
+	"inches": "27"
+},{
+	"title": "This second TV",
+	"img": "tv-fish.jpg",
+	"description": "This is anothe description of a tv. It's a tv that can do so-and-so with cool apps for tv.",
+	"inches": "32"
+}, {
+	"title": "This tv in a room",
+	"img": "tv-room.jpg",
+	"description": "This tv is in a room. It has the ability to send audio to a speaker.",
+	"inches": "50"
+}]
