@@ -1,7 +1,7 @@
 var xerorexControllers = angular.module('xerorexControllers', []);
 
 // Navbar Controller
-xerorexControllers.controller('navbarCtrl', function ($scope, $http){
+xerorexControllers.controller('navbarCtrl', function ($scope, $http) {
 	$http.get('data/homepage/menu-items.json').success(function (data) {
 		$scope.menuItems = data;
 	});
@@ -15,15 +15,24 @@ xerorexControllers.controller('carouselCtrl', function ($scope, $http) {
 })
 
 // Marketing controller
-xerorexControllers.controller('marketingCtrl', function($scope, $http){
+xerorexControllers.controller('marketingCtrl', function ($scope, $http) {
 	$http.get('data/homepage/marketing-items.json').success(function (data) {
 		$scope.marketingItems = data;
 	});
 });
 
-//Fueturette Controller
-xerorexControllers.controller('featuretteCtrl', function($scope, $http){
+// Fueturette Controller
+xerorexControllers.controller('featuretteCtrl', function ($scope, $http) {
 	$http.get('data/homepage/featurette-items.json').success(function (data) {
 		$scope.featuretteItems = data;
+	});
+});
+
+// Televisions Controller
+xerorexControllers.controller('televisionsCtrl', function ($scope, $http) {
+	$http.get('data/products/televisions.json').success(function (televisions) {
+		var televisionsSorted = televisions.sort(function (a, b) { return b.releaseMonth - a.releaseMonth; })
+				.sort(function (a, b) { return b.releaseYear - a.releaseYear; });
+		$scope.televisions = televisionsSorted;
 	});
 });
