@@ -2,6 +2,7 @@
 	"title": "This first TV",
 	"img": "tv-black.jpg",
 	"description": "This is a description of some tv. It is a great tv with specifications such as so and so.",
+	"href":"",
 	"inches": "27",
 	"releaseMonth": 1,
 	"releaseYear": 2015

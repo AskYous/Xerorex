@@ -12,7 +12,7 @@ xerorexControllers.controller('carouselCtrl', function ($scope, $http) {
 	$http.get('data/homepage/carousel-items.json').success(function (data) {
 		$scope.carouselItems = data;
 	});
-})
+});
 
 // Marketing controller
 xerorexControllers.controller('marketingCtrl', function ($scope, $http) {
@@ -34,5 +34,6 @@ xerorexControllers.controller('televisionsCtrl', function ($scope, $http) {
 		var televisionsSorted = televisions.sort(function (a, b) { return b.releaseMonth - a.releaseMonth; })
 				.sort(function (a, b) { return b.releaseYear - a.releaseYear; });
 		$scope.televisions = televisionsSorted;
+		$scope.newest = televisionsSorted[0];
 	});
 });
