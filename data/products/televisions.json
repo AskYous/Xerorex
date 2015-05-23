@@ -1,5 +1,5 @@
 [{
-	"title": "This first TV",
+	"title": "Black TV",
 	"img": "tv-black.jpg",
 	"description": "This is a description of some tv. It is a great tv with specifications such as so and so.",
 	"href":"",
@@ -14,7 +14,7 @@
 	"releaseMonth": 5,
 	"releaseYear": 2014
 }, {
-	"title": "This tv in a room",
+	"title": "50\" TV-Ultimate",
 	"img": "tv-room.jpg",
 	"description": "This tv is in a room. It has the ability to send audio to a speaker.",
 	"inches": "50",
