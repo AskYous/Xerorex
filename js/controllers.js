@@ -35,5 +35,14 @@ xerorexControllers.controller('televisionsCtrl', function ($scope, $http) {
 				.sort(function (a, b) { return b.releaseYear - a.releaseYear; });
 		$scope.televisions = televisionsSorted;
 		$scope.newest = televisionsSorted[0];
+
+        var sizes = [];
+        televisionsSorted.forEach(function(tv){
+           if(sizes.indexOf(tv.inches) == -1){
+            sizes.push(tv.inches);
+           }
+        });
+        sizes = sizes.sort();
+        $scope.sizes = sizes;
 	});
 });

@@ -1,36 +1,79 @@
-<style>
-	.jumbotron * {
-		margin: 0 auto;
-		text-align: center;
-	}
-	.product img{
-		height: 200px;
-	}
-</style>
 <br />
 <br />
 <br />
 <div class="container">
-	<!-- Jumbotron -->
-	<div class="jumbotron" style="background-color: white;">
-		<h1>New UHDTVs</h1>
-		<p class="lead">
-			Get your new televisions for your summer now! UHDTV, Curved TVs, and more. Great for the summer or gift!
-		</p>
-	</div>
+    <!-- Jumbotron -->
+    <div class="jumbotron" style="background-color: white;">
+        <h1>New UHDTVs</h1>
+        <p class="lead">
+            Get your new televisions for your summer now! UHDTV, Curved TVs, and more. Great for the summer or gift!
+        </p>
+    </div>
 
-	<!-- Example row of columns -->
-	<div class="row">
-		<div class="col-lg-3 product" ng-repeat="tv in televisions">
-			<h2>{{tv.title}}</h2>
-			<p><img class="img-thumbnail" ng-src="img/televisions/{{tv.img}}" alt="{{tv.title}}"/>
-			</p>
-			<p>
-				{{tv.description}}
-			</p>
-			<p>
-				<a class="btn btn-primary" href="{{tv.href}}" role="button">View details &raquo;</a>
-			</p>
-		</div>
-	</div>
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 product" ng-repeat="tv in televisions">
+            <h2>{{tv.title}}</h2>
+            <p>
+                <a href="#" class="thumbnail">
+                    <img ng-src="img/televisions/{{tv.img}}" alt="{{tv.title}}"/>
+                </a>
+            </p>
+            <p>
+                {{tv.description}}
+            </p>
+            <p>
+                <a class="btn btn-primary" href="{{tv.href}}" role="button">View details &raquo;</a>
+            </p>
+        </div>
+    </div>
+    <hr/>
+    <div>
+        <div class="text-center">
+            <h1>Shop by Sizes</h1>
+        </div>
+        <br>
+        <div class="row">
+            <div ng-repeat="size in sizes" class="tv-size-container">
+                <a href="#" class="thumbnail">
+                    <div class="tv-size" style="height: {{size*50/16}}px; width: {{size*50/9}}px;">
+                        {{size}}"
+                    </div>
+                </a>
+                <div class="text-center h3">
+                    {{size}} Inches
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
+<style>
+    .jumbotron * {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .product img{
+        height: 200px;
+    }
+    div.tv-size-container{
+        display: inline-block;
+        margin: 5px;
+    }
+    div.tv-size{
+        padding: 10px;
+        border: 1px solid rgb(119, 119, 119);
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        background: rgb(122,188,255); /* Old browsers */
+        background: -moz-linear-gradient(left,  rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(122,188,255,1)), color-stop(44%,rgba(96,171,248,1)), color-stop(100%,rgba(64,150,238,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* IE10+ */
+        background: linear-gradient(to right,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=1 ); /* IE6-9 */
+
+    }
+</style>
