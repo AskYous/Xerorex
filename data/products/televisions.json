@@ -20,4 +20,11 @@
 	"inches": "50",
 	"releaseMonth": 10,
 	"releaseYear": 2015
+}, {
+  "title": "These TVs",
+  "img": "tv-sizes.jpg",
+  "description": "This is a description of the TV above that is re-sizable perhaps. Text holder place holder.",
+  "inches": "25",
+  "releaseMonth": 12,
+  "releaseYear": 2015
 }]
