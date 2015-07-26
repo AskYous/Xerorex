@@ -5,19 +5,34 @@ var xerorexApp = angular.module('xerorexApp', [
 
 //routes
 xerorexApp.config(['$routeProvider', function ($routeProvider) {
+	// Home
 	$routeProvider.when('/home', {
 		templateUrl: 'public/html/homepage/index.html',
-	}).when('/', {
+	})
+
+	// Home
+	.when('/', {
 		templateUrl: 'public/html/homepage/index.html',
-	}).when('/#', {
+	})
+
+	// Home
+	.when('/#', {
 		templateUrl: 'public/html/homepage/index.html',
-	}).when('/Phones', {
-		templateUrl: 'public/phones/index.html', //for future
-		controller: 'PhoneCtrl'
-	}).when('/Televisions', {
+	})
+
+	// Televisions
+	.when('/Televisions', {
 		templateUrl: 'public/html/televisions/index.html', //for future
 		controller: 'televisionsCtrl'
 	})
+
+	// Technology
+	.when('/:technology', {
+		templateUrl: 'public/html/shared/technology.html',
+		controller: 'technologyCtrl'
+	})
+
+	// Otherwise
 	.otherwise({
 		redirectTo: '/404' //URL doesn't exist
 	});
