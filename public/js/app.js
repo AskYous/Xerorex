@@ -6,19 +6,19 @@ var xerorexApp = angular.module('xerorexApp', [
 //routes
 xerorexApp.config(['$routeProvider', function ($routeProvider) {
 	$routeProvider.when('/home', {
-		templateUrl: 'html/homepage/index.html',
+		templateUrl: 'public/html/homepage/index.html',
 	}).when('/', {
-		templateUrl: 'html/homepage/index.html',
+		templateUrl: 'public/html/homepage/index.html',
 	}).when('/#', {
-		templateUrl: 'html/homepage/index.html',
+		templateUrl: 'public/html/homepage/index.html',
 	}).when('/Phones', {
-		templateUrl: 'phones/index.html', //for future
+		templateUrl: 'public/phones/index.html', //for future
 		controller: 'PhoneCtrl'
 	}).when('/Televisions', {
-		templateUrl: 'html/televisions/index.html', //for future
+		templateUrl: 'public/html/televisions/index.html', //for future
 		controller: 'televisionsCtrl'
 	})
 	.otherwise({
 		redirectTo: '/404' //URL doesn't exist
-	});	
+	});
 }]);

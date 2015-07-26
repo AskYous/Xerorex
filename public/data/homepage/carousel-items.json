@@ -2,18 +2,18 @@
 	"header": "Televisions",
 	"description": "Explore the future of picture quality with this 60 3D UHD 4K Smart TV that features a 3840 x 2160 native resolution for viewing high-resolution content. You can even upscale lower resolution material to near-4K picture quality.",
 	"href": "#/Televisions",
-	"img": "img/televisions/tv-black.jpg",
-	"btnText": "Learn more"	
+	"img": "public/img/televisions/tv-black.jpg",
+	"btnText": "Learn more"
 },{
 	"header": "Notebooks",
 	"description": "Boots in seconds. Nothing complicated to learn. Comes with your favorite Google apps. Built for everyday use and perfect for sharing with others. Starting at $199.",
 	"href": "#/Learn More",
-	"img": "img/laptops/laptop-front.jpg",
-	"btnText": "Learn more"			
+	"img": "public/img/laptops/laptop-front.jpg",
+	"btnText": "Learn more"
 },{
 	"header": "Wearables",
 	"description": "Android Wear organizes your information, suggests what you need, and shows it to you before you even ask. Get messages from your friends, meeting notifications, and weather updates at a glance.",
 	"href": "#/Learn More",
-	"img": "img/watches/watch-screens.jpg",
-	"btnText": "Learn more"			
+	"img": "public/img/watches/watch-screens.jpg",
+	"btnText": "Learn more"
 }]
