@@ -1,0 +1,26 @@
+.jumbotron * {
+  margin: 0 auto;
+  text-align: center;
+}
+.product img{
+  height: 200px;
+}
+div.tv-size-container{
+  display: inline-block;
+  margin: 5px;
+}
+div.tv-size{
+  padding: 10px;
+  border: 1px solid rgb(119, 119, 119);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  background: rgb(122,188,255); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(122,188,255,1)), color-stop(44%,rgba(96,171,248,1)), color-stop(100%,rgba(64,150,238,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=1 ); /* IE6-9 */
+}
