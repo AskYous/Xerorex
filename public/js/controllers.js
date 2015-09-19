@@ -3,6 +3,7 @@ var xerorexControllers = angular.module('xerorexControllers', []);
 // Technology Controller
 xerorexControllers.controller('technologyCtrl', function($scope, $routeParams, $http){
 	var technology = $routeParams.technology;
+
 	$http.get('public/data/shared/technologies.json').success(function(data){
 		technology = data.filter(function(t){ return t.title.toLowerCase() === technology.toLowerCase()})[0];
 		$scope.technology = technology;
