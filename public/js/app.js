@@ -22,7 +22,7 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 
 	// Televisions
 	.when('/Televisions', {
-		templateUrl: 'public/html/televisions/index.html', //for future
+		templateUrl: 'public/html/shared/technology.html',
 		controller: 'televisionsCtrl'
 	})
 

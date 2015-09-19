@@ -39,20 +39,11 @@ xerorexControllers.controller('featuretteCtrl', function ($scope, $http) {
 });
 
 // Televisions Controller
-xerorexControllers.controller('televisionsCtrl', function ($scope, $http) {
-	$http.get('public/data/products/televisions.json').success(function (televisions) {
-		var televisionsSorted = televisions.sort(function (a, b) { return b.releaseMonth - a.releaseMonth; })
-		.sort(function (a, b) { return b.releaseYear - a.releaseYear; });
-		$scope.televisions = televisionsSorted;
-		$scope.newest = televisionsSorted[0];
-
-		var sizes = [];
-		televisionsSorted.forEach(function(tv){
-			if(sizes.indexOf(tv.inches) == -1){
-				sizes.push(tv.inches);
-			}
-		});
-		sizes = sizes.sort();
-		$scope.sizes = sizes;
+xerorexControllers.controller('televisionsCtrl', function ($scope, $http, $sce) {
+	$scope.toTrustedHtml = function (html) {
+		return $sce.trustAsHtml(html);
+	}
+	$http.get('public/data/products/televisions.json').success(function (data) {
+		$scope.technology = data;
 	});
 });
