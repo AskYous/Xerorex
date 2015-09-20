@@ -18,7 +18,7 @@
 	</head>
 	<body>
 		<!-- Navbar -->
-		<ng-include src="'public/html/shared/navbar.html'"></ng-include>
+		<ng-include src="'public/html/shared/navbar.html'" data-ng-controller="siteController"></ng-include>
 
 		<!-- All views rendered in this div (see app.js) -->
 		<div data-ng-view></div>
@@ -32,5 +32,6 @@
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="public/js/app.js"></script>
 		<script src="public/js/controllers.js"></script>
+		<script src="public/js/directives.js"></script>
 	</body>
 </html>

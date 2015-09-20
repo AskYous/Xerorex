@@ -5,11 +5,11 @@
 .product img{
   height: 200px;
 }
-div.tv-size-container{
+div.size-container{
   display: inline-block;
   margin: 5px;
 }
-div.tv-size{
+div.size{
   padding: 10px;
   border: 1px solid rgb(119, 119, 119);
   color: white;

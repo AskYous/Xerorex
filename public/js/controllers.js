@@ -1,43 +1,22 @@
 var xerorexControllers = angular.module('xerorexControllers', []);
 
-// Technology Controller
-xerorexControllers.controller('technologyCtrl', function($scope, $routeParams, $http){
-	var technology = $routeParams.technology;
-
-	$http.get('public/data/shared/technologies.json').success(function(data){
-		technology = data.filter(function(t){ return t.title.toLowerCase() === technology.toLowerCase()})[0];
-		$scope.technology = technology;
-	});
-});
-
-// Navbar Controller
-xerorexControllers.controller('navbarCtrl', function ($scope, $http) {
-	$http.get('public/data/homepage/menu-items.json').success(function (data) {
-		$scope.menuItems = data;
-	});
-});
-
-// Carousel controller
-xerorexControllers.controller('carouselCtrl', function ($scope, $http) {
+xerorexControllers.controller('homeController', function ($scope, $http) {
 	$http.get('public/data/homepage/carousel-items.json').success(function (data) {
 		$scope.carouselItems = data;
 	});
-});
-
-// Marketing controller
-xerorexControllers.controller('marketingCtrl', function ($scope, $http) {
 	$http.get('public/data/homepage/marketing-items.json').success(function (data) {
 		$scope.marketingItems = data;
 	});
-});
-
-// Fueturette Controller
-xerorexControllers.controller('featuretteCtrl', function ($scope, $http) {
 	$http.get('public/data/homepage/featurette-items.json').success(function (data) {
-		$scope.featuretteItems = data;
+		$scope.featurettes = data;
 	});
 });
-
+// Site Controller
+xerorexControllers.controller('siteController', function ($scope, $http) {
+	$http.get('public/data/homepage/menu-items.json').success(function (data) {
+		$scope.menuItems = data;
+	});
+})
 // Televisions Controller
 xerorexControllers.controller('televisionsCtrl', function ($scope, $http, $sce) {
 	$scope.toTrustedHtml = function (html) {
@@ -45,5 +24,15 @@ xerorexControllers.controller('televisionsCtrl', function ($scope, $http, $sce) 
 	}
 	$http.get('public/data/products/televisions.json').success(function (data) {
 		$scope.technology = data;
+	});
+});
+// Home Appliances Controller
+xerorexControllers.controller('homeAppliancesCtrl', function ($scope, $http, $sce) {
+	$scope.toTrustedHtml = function (html) {
+		return $sce.trustAsHtml(html);
+	}
+	$http.get('public/data/devices/homeAppliances.json').success(function (data) {
+		$scope.carouselItems = data.carouselItems;
+		$scope.featurettes = data.featurettes;
 	});
 });

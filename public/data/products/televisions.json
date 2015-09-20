@@ -1,46 +1,53 @@
 {
 	"title": "New UHDTVs",
 	"subtitle": "Get your new televisions for your summer now! UHDTV, Curved TVs, and more. Great for the summer or gift!",
-	"rows": [{
-		"title": null,
-		"columns": [
+	"rows": [
 		{
-			"title": "These TVs",
-			"image": "public/img/televisions/tv-sizes.jpg",
-			"description": "This is a description of the TV above that is re-sizable perhaps. Text holder place holder.",
-			"button": {
-				"text": "View details &raquo;",
-				"url": "#"
-			}
-		},{
-			"title": "50\" TV-Ultimate",
-			"image": "public/img/televisions/tv-room.jpg",
-			"description": "This tv is in a room. It has the ability to send audio to a speaker.",
-			"button": {
-				"text": "View details &raquo;",
-				"url": "#"
-			}
-		},{
-			"title": "Black TV",
-			"image": "public/img/televisions/tv-black.jpg",
-			"description": "This is a description of some tv. It is a great tv with specifications such as so and so.",
-			"button": {
-				"text": "View details &raquo;",
-				"url": "#"
-			}
-		},{
-			"title": "This second TV",
-			"image": "public/img/televisions/tv-fish.jpg",
-			"description": "This is another description of a tv. It's a tv that can do so-and-so with cool apps for tv.",
-			"button": {
-				"text": "View details &raquo;",
-				"url": "#"
-			}
-		}]
-	}, {
-		"title": "Shop by sizes",
-		"subtitle": null,
-		"type": "sizes",
-		"sizes": [25,27,32,56]
-	}]
+			"title": null,
+			"columns": [
+				{
+					"title": "These TVs",
+					"image": "public/img/televisions/tv-sizes.jpg",
+					"description": "This is a description of the TV above that is re-sizable perhaps. Text holder place holder.",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#"
+					}
+				},
+				{
+					"title": "50\" TV-Ultimate",
+					"image": "public/img/televisions/tv-room.jpg",
+					"description": "This tv is in a room. It has the ability to send audio to a speaker.",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#"
+					}
+				},
+				{
+					"title": "Black TV",
+					"image": "public/img/televisions/tv-black.jpg",
+					"description": "This is a description of some tv. It is a great tv with specifications such as so and so.",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#"
+					}
+				},
+				{
+					"title": "This second TV",
+					"image": "public/img/televisions/tv-fish.jpg",
+					"description": "This is another description of a tv. It's a tv that can do so-and-so with cool apps for tv.",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#"
+					}
+				}
+			]
+		},
+		{
+			"title": "Shop by sizes",
+			"subtitle": null,
+			"type": "sizes",
+			"sizes": [25,27,32,56]
+		}
+	]
 }

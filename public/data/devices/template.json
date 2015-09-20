@@ -1,0 +1,24 @@
+{
+  "carousel": {
+    "items": [{
+      "title": "title",
+      "description": "subtitle",
+      "image": "public/img/product/something.jpg",
+      "url": "#",
+      "button": "Learn more"
+    },
+    { ... }]
+  },
+  "featurettes": [{
+    "title": {
+      "primary": "Primary title.",
+      "secondary": "Secondary title."
+    },
+    "description": "Some description",
+    "button": {
+      "text": "Click here!",
+      "url": "#"
+    }
+    }, { ... }
+  ]
+}

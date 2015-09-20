@@ -1,0 +1,41 @@
+{
+  "carouselItems": [{
+    "title": "Washing Machines",
+    "description": "Get a washing machine today.",
+    "image": "http://i.imgur.com/RhLJM9K.png",
+    "url": "#",
+    "button": {
+      "text": "Browse washing machines"
+    }
+    },{
+      "title": "Microwaves",
+      "description": "Warm up your food. This is some text template.",
+      "image": "public/img/something/something.jpg",
+      "url": "#",
+      "button": {
+        "text": "Click here."
+      }
+      }],
+      "featurettes": [{
+        "title": {
+          "primary": "Security Cameras",
+          "secondary": "Protect your home from evil bad guys."
+        },
+        "description": "Youo sjioudl egt this camera because it helps protext your home and people can see otuside.",
+        "button": {
+          "text": "Click here!",
+          "url": "#"
+        }
+        },{
+          "title": {
+            "primary": "Vacuums",
+            "secondary": "Clean stuff."
+          },
+          "description": "Get a vacuum because, because. Yes and no and yes. Imprtant you know.",
+          "button": {
+            "text": "Click here!",
+            "url": "#"
+          }
+        }
+      ]
+    }
