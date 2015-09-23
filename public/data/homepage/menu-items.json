@@ -1,38 +1,69 @@
 [{
 	"title": "Discover",
 	"href": "#/Discover"
-},{
-	"title": "Products",
-	"href": "#/Products",
-	"menuItems": [{
-		"title": "Everything",
-		"href": "#/Products/Everything"
 	},{
-		"title": "Phones",
-		"href": "#/Products/Phones"
-	}, {
-		"title": "Televisions",
-		"href": "#/Televisions"
-	},{
-		"title": "Tablets",
-		"href": "#/Products/Tablets"
-	}, {
-		"title": "Home Appliances",
-		"href": "#/HomeAppliances"
-	}, {
-		"title": "Blu-ray and Smart Players",
-		"href": "#/Products/BlueRayDVD"
-	}, {
-		"title": "Home Theater & Audio",
-		"href": "#/Products/HomeTheater"
-	}, {
-		"title": "Cameras",
-		"href": "#/Products/Cameras"
-	}, {
-		"title": "Memory and Storage",
-		"href": "#/Products/Memory"
-	}]
-},{
-	"title": "Support",
-	"href": "#/Support"
-}]
+		"title": "Products",
+		"href": "#/Products",
+		"menuItems": [{
+			"title": "Everything",
+			"href": "#/Products/Everything"
+			},{
+				"title": "Phones",
+				"href": "#/Products/Phones"
+				}, {
+					"title": "Televisions",
+					"href": "#/Televisions"
+					},{
+						"title": "Wearables",
+						"href": "#/Products/Wearables"
+						},{
+							"title": "Tablets",
+							"href": "#/Products/Tablets"
+							}, {
+								"title": "Home Appliances",
+								"href": "#/HomeAppliances"
+								}, {
+									"title": "Blu-ray and Smart Players",
+									"href": "#/Products/BlueRayDVD"
+									}, {
+										"title": "Home Theater & Audio",
+										"href": "#/Products/HomeTheater"
+										}, {
+											"title": "Cameras",
+											"href": "#/Products/Cameras"
+											}, {
+												"title": "Computing",
+												"href": "#/Products/Computing"
+												}, {
+													"title": "Memory and Storage",
+													"href": "#/Products/Memory"
+													},{
+														"title": "LED Lighting",
+														"href": "#/Products/Lighting"
+														}, {
+															"title": "Security",
+															"href": "#/Products/Security"
+															}, {
+																"title": "Accessories",
+																"href": "#/Products/Accessories"
+																}]
+																},{
+																	"title": "Apps",
+																	"href": "#/Apps",
+																	"menuItems": [{
+																		"title": "TV and Blue-ray Apps",
+																		"href": "#/Apps/TV"
+																		}, {
+																			"title": "Audio Player",
+																			"href": "#Apps/Audio"
+																			}, {
+																				"title": "Video Player",
+																				"href": "#/Apps/Video"
+																				}, {
+																					"title": "Data Switch",
+																					"href": "#/Apps/Switch"
+																					}]
+																					}, {
+																						"title": "Support",
+																						"href": "#/Support"
+																						}]

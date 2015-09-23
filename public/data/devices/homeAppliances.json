@@ -2,7 +2,7 @@
   "carouselItems": [{
     "title": "Washing Machines",
     "description": "Get a washing machine today.",
-    "image": "http://i.imgur.com/RhLJM9K.png",
+    "image": "something.jpg",
     "url": "#",
     "button": {
       "text": "Browse washing machines"
