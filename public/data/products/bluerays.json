@@ -1,0 +1,124 @@
+{
+	"title": "Blueray Players",
+	"subtitle": "Some subtitle for bluerays",
+	"rows": [
+		{
+			"title": "",
+			"columns": [
+				{
+					"title": "XG-G02",
+					"image": "public/img/bluerays/XG-G02.png",
+					"description": "Some description about this blueray player",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#/bluerays/XG-G02"
+					}
+				},{
+					"title": "XG-G03",
+					"image": "public/img/bluerays/XG-G03.png",
+					"description": "Some description about this blueray player",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#/bluerays/XG-G03"
+					}
+				},{
+					"title": "XG-G04",
+					"image": "public/img/bluerays/XG-G04.png",
+					"description": "Some description about this blueray player",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#/bluerays/XG-G04"
+					}
+				},{
+					"title": "XG-G2800",
+					"image": "public/img/bluerays/XG-G2800.png",
+					"description": "Some description about this blueray player",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#/bluerays/XG-G2800"
+					}
+				},{
+					"title": "XG-G2801",
+					"image": "public/img/bluerays/XG-G2801.png",
+					"description": "Some description about this blueray player",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#/bluerays/XG-G2801"
+					}
+				},{
+					"title": "XG-G2802",
+					"image": "public/img/bluerays/XG-G2802.png",
+					"description": "Some description about this blueray player",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#/bluerays/XG-G2802"
+					}
+				},{
+					"title": "XG-G2803",
+					"image": "public/img/bluerays/XG-G2803.png",
+					"description": "Some description about this blueray player",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#/bluerays/XG-G2803"
+					}
+				},{
+					"title": "XG-G3600",
+					"image": "public/img/bluerays/XG-G3600.png",
+					"description": "Some description about this blueray player",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#/bluerays/XG-G3600"
+					}
+				},{
+					"title": "XG-G3602",
+					"image": "public/img/bluerays/XG-G3602.png",
+					"description": "Some description about this blueray player",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#/bluerays/XG-G3602"
+					}
+				},{
+					"title": "XG-G3610",
+					"image": "public/img/bluerays/XG-G3610.png",
+					"description": "Some description about this blueray player",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#/bluerays/XG-G3610"
+					}
+				},{
+					"title": "XG-G4301",
+					"image": "public/img/bluerays/XG-G4301.png",
+					"description": "Some description about this blueray player",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#/bluerays/XG-G4301"
+					}
+				},{
+					"title": "XG-G4302",
+					"image": "public/img/bluerays/XG-G4302.png",
+					"description": "Some description about this blueray player",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#/bluerays/XG-G4302"
+					}
+				},{
+					"title": "XG-G4320",
+					"image": "public/img/bluerays/XG-G4320.png",
+					"description": "Some description about this blueray player",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#/bluerays/XG-G4320"
+					}
+				},{
+					"title": "XG-G4363",
+					"image": "public/img/bluerays/XG-G4363.png",
+					"description": "Some description about this blueray player",
+					"button": {
+						"text": "View details &raquo;",
+						"url": "#/bluerays/XG-G4363"
+					}
+				}
+			]
+		}
+	]
+}

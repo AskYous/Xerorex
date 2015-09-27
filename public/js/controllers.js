@@ -36,3 +36,12 @@ xerorexControllers.controller('homeAppliancesCtrl', function ($scope, $http, $sc
 		$scope.featurettes = data.featurettes;
 	});
 });
+// Bluerays Controller
+xerorexApp.controller('blueraysCtrl', function ($scope, $http, $sce) {
+	$scope.toTrustedHtml = function (html) {
+		return $sce.trustAsHtml(html);
+	}
+	$http.get('public/data/products/bluerays.json').success(function (data) {
+		$scope.technology = data;
+	});
+})

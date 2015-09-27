@@ -18,10 +18,16 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 		controller: 'televisionsCtrl'
 	})
 
-	// Televisions
+	// Home Appliances
 	.when('/HomeAppliances', {
 		templateUrl: 'public/html/shared/devices.html',
 		controller: 'homeAppliancesCtrl'
+	})
+
+	// Bluerays
+	.when('/Bluerays', {
+		templateUrl: 'public/html/shared/technology.html',
+		controller: 'blueraysCtrl'
 	})
 
 	// Otherwise
