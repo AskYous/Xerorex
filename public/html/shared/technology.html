@@ -20,8 +20,8 @@
                 <img class="image" data-ng-src="{{column.image}}" alt="{{column.title}}"/>
               </a>
             </p>
-            <p class="description">{{column.description}}</p>
-            <p class="buttons">
+            <p class="description" data-ng-if="column.description">{{column.description}}</p>
+            <p class="buttons" data-ng-if="column.button">
               <a class="button btn btn-primary" href="{{column.button.href}}" data-ng-bind-html="toTrustedHtml(column.button.text)"></a>
             </p>
         </div>
