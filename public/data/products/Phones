@@ -1,0 +1,36 @@
+{
+	"title": "Phones",
+	"subtitle": "Product Summary",
+	"rows": [
+		{
+			"title": "",
+			"columns": [
+				{
+						"title": "XV 1 Black",
+						"image": "public/img/Phones/XV 1 Black.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XV 1 Gold",
+						"image": "public/img/Phones/XV 1 Gold.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XV 1 White",
+						"image": "public/img/Phones/XV 1 White.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XV 1E Black",
+						"image": "public/img/Phones/XV 1E Black.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XV 1E Gold",
+						"image": "public/img/Phones/XV 1E Gold.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XV 1E White",
+						"image": "public/img/Phones/XV 1E White.jpg",
+						"description": "Product Summary"
+				}
+			]
+		}
+	]
+}
