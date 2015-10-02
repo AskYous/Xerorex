@@ -1,0 +1,48 @@
+{
+	"title": "Kitchen Appliances",
+	"subtitle": "Product Summary",
+	"rows": [
+		{
+			"title": "",
+			"columns": [
+				{
+						"title": "XM-K100 Mixer",
+						"image": "public/img/Kitchen Appliances/XM-K100 Mixer.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-K102 Mixer",
+						"image": "public/img/Kitchen Appliances/XM-K102 Mixer.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-K200 Blender",
+						"image": "public/img/Kitchen Appliances/XM-K200 Blender.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-K7200R Blender",
+						"image": "public/img/Kitchen Appliances/XM-K7200R Blender.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-K7202 Blender",
+						"image": "public/img/Kitchen Appliances/XM-K7202 Blender.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-K7218 Blender",
+						"image": "public/img/Kitchen Appliances/XM-K7218 Blender.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-K7220 Blender",
+						"image": "public/img/Kitchen Appliances/XM-K7220 Blender.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-K7234 Blender",
+						"image": "public/img/Kitchen Appliances/XM-K7234 Blender.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-K7239 Blender",
+						"image": "public/img/Kitchen Appliances/XM-K7239 Blender.jpg",
+						"description": "Product Summary"
+				}
+			]
+		}
+	]
+}
