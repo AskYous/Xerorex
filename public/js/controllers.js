@@ -17,12 +17,21 @@ xerorexControllers.controller('siteController', function ($scope, $http) {
 		$scope.menuItems = data;
 	});
 })
-// Televisions Controller
-xerorexControllers.controller('televisionsCtrl', function ($scope, $http, $sce) {
+// Bluerays Controller
+xerorexApp.controller('blueraysCtrl', function ($scope, $http, $sce) {
 	$scope.toTrustedHtml = function (html) {
 		return $sce.trustAsHtml(html);
 	}
-	$http.get('public/data/products/televisions.json').success(function (data) {
+	$http.get('public/data/products/bluerays.json').success(function (data) {
+		$scope.technology = data;
+	});
+});
+// Cameras Controller
+xerorexApp.controller('camerasCtrl', function ($scope, $http, $sce) {
+	$scope.toTrustedHtml = function (html) {
+		return $sce.trustAsHtml(html);
+	}
+	$http.get('public/data/products/cameras.json').success(function (data) {
 		$scope.technology = data;
 	});
 });
@@ -36,12 +45,12 @@ xerorexControllers.controller('homeAppliancesCtrl', function ($scope, $http, $sc
 		$scope.featurettes = data.featurettes;
 	});
 });
-// Bluerays Controller
-xerorexApp.controller('blueraysCtrl', function ($scope, $http, $sce) {
+// Televisions Controller
+xerorexControllers.controller('televisionsCtrl', function ($scope, $http, $sce) {
 	$scope.toTrustedHtml = function (html) {
 		return $sce.trustAsHtml(html);
 	}
-	$http.get('public/data/products/bluerays.json').success(function (data) {
+	$http.get('public/data/products/televisions.json').success(function (data) {
 		$scope.technology = data;
 	});
-})
+});

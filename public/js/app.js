@@ -12,10 +12,16 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 		templateUrl: 'public/html/homepage/index.html',
 	})
 
-	// Televisions
-	.when('/Televisions', {
+	// Bluerays
+	.when('/Bluerays', {
 		templateUrl: 'public/html/shared/technology.html',
-		controller: 'televisionsCtrl'
+		controller: 'blueraysCtrl'
+	})
+
+	// Bluerays
+	.when('/Cameras', {
+		templateUrl: 'public/html/shared/technology.html',
+		controller: 'camerasCtrl'
 	})
 
 	// Home Appliances
@@ -24,10 +30,10 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 		controller: 'homeAppliancesCtrl'
 	})
 
-	// Bluerays
-	.when('/Bluerays', {
+	// Televisions
+	.when('/Televisions', {
 		templateUrl: 'public/html/shared/technology.html',
-		controller: 'blueraysCtrl'
+		controller: 'televisionsCtrl'
 	})
 
 	// Otherwise
