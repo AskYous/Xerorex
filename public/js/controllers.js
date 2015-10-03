@@ -93,7 +93,7 @@ xerorexControllers.controller('memoryCtrl', function ($scope, $http, $sce) {
 		$scope.technology = data;
 	});
 });
-// Memory Controller
+// Phones Controller
 xerorexControllers.controller('phonesCtrl', function ($scope, $http, $sce) {
 	$scope.toTrustedHtml = function (html) {
 		return $sce.trustAsHtml(html);
@@ -108,6 +108,15 @@ xerorexControllers.controller('televisionsCtrl', function ($scope, $http, $sce) 
 		return $sce.trustAsHtml(html);
 	}
 	$http.get('public/data/products/televisions.json').success(function (data) {
+		$scope.technology = data;
+	});
+});
+// Security Controller
+xerorexControllers.controller('securityCtrl', function ($scope, $http, $sce) {
+	$scope.toTrustedHtml = function (html) {
+		return $sce.trustAsHtml(html);
+	}
+	$http.get('public/data/products/security.json').success(function (data) {
 		$scope.technology = data;
 	});
 });
