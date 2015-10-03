@@ -30,6 +30,12 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 		controller: 'homeAppliancesCtrl'
 	})
 
+	// Home Theater
+	.when('/HomeTheater', {
+		templateUrl: 'public/html/shared/technology.html',
+		controller: 'homeTheaterCtrl'
+	})
+
 	// Televisions
 	.when('/Televisions', {
 		templateUrl: 'public/html/shared/technology.html',

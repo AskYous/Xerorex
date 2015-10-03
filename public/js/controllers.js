@@ -44,6 +44,15 @@ xerorexControllers.controller('homeAppliancesCtrl', function ($scope, $http, $sc
 		$scope.technology = data;
 	});
 });
+// Home Theater Controller
+xerorexControllers.controller('homeTheaterCtrl', function ($scope, $http, $sce) {
+	$scope.toTrustedHtml = function (html) {
+		return $sce.trustAsHtml(html);
+	}
+	$http.get('public/data/products/homeTheater.json').success(function (data) {
+		$scope.technology = data;
+	});
+});
 // Televisions Controller
 xerorexControllers.controller('televisionsCtrl', function ($scope, $http, $sce) {
 	$scope.toTrustedHtml = function (html) {
