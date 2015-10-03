@@ -1,0 +1,16 @@
+{
+	"title": "Laptops",
+	"subtitle": "Product Summary",
+	"rows": [
+		{
+			"title": "",
+			"columns": [
+				{
+						"title": "XV Light Notebook",
+						"image": "public/img/Laptops/XV Light Notebook.jpg",
+						"description": "Product Summary"
+				}
+			]
+		}
+	]
+}
