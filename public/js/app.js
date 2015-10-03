@@ -72,6 +72,12 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 		controller: 'phonesCtrl'
 	})
 
+	// Tablets
+	.when('/Tablets', {
+		templateUrl: 'public/html/shared/technology.html',
+		controller: 'tabletsCtrl'
+	})
+
 	// Televisions
 	.when('/Televisions', {
 		templateUrl: 'public/html/shared/technology.html',
