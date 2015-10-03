@@ -1,0 +1,16 @@
+{
+	"title": "Memory",
+	"subtitle": "Product Summary",
+	"rows": [
+		{
+			"title": "",
+			"columns": [
+				{
+						"title": "XM 1.0 GB SD ",
+						"image": "public/img/Memory/XM 1.0 GB SD .jpg",
+						"description": "Product Summary"
+				}
+			]
+		}
+	]
+}
