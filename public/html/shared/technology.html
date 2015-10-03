@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="public/css/technology.css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="public/css/technology.css?v=1" media="screen" title="no title" charset="utf-8">
 <br /><br /><br />
 <div class="container">
   <div class="jumbotron" style="background-color: white;">
@@ -14,7 +14,7 @@
       </div>
       <div class="bottom" data-ng-switch-default>
           <div class="column col-lg-3 col-md-4 col-sm-6 product" data-ng-repeat="column in row.columns">
-            <h2 class="title">{{column.title}}</h2>
+            <h2 class="title" title="{{column.title}}">{{column.title}}</h2>
             <p class="thumbnail-container">
               <a href="#" class="thumbnail">
                 <img class="image" data-ng-src="{{column.image}}" alt="{{column.title}}"/>
