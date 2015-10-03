@@ -2,7 +2,9 @@ var xerorexControllers = angular.module('xerorexControllers', []);
 
 xerorexControllers.controller('homeController', function ($scope, $http) {
 	$http.get('public/data/homepage/carousel-items.json').success(function (data) {
-		$scope.carouselItems = data;
+		$scope.carousel = {
+			items: data
+		};
 	});
 	$http.get('public/data/homepage/marketing-items.json').success(function (data) {
 		$scope.marketingItems = data;
@@ -35,6 +37,17 @@ xerorexApp.controller('camerasCtrl', function ($scope, $http, $sce) {
 		$scope.technology = data;
 	});
 });
+// Computing Controller
+xerorexApp.controller('computingCtrl', function ($scope, $http, $sce) {
+	$scope.toTrustedHtml = function (html) {
+		return $sce.trustAsHtml(html);
+	}
+	$http.get('public/data/devices/computing.json').success(function (data) {
+		$scope.carousel = data.carousel;
+		$scope.featurettes = data.featurettes;
+		console.log(data);
+	});
+});
 // Home Appliances Controller
 xerorexControllers.controller('homeAppliancesCtrl', function ($scope, $http, $sce) {
 	$scope.toTrustedHtml = function (html) {
@@ -59,6 +72,15 @@ xerorexControllers.controller('televisionsCtrl', function ($scope, $http, $sce) 
 		return $sce.trustAsHtml(html);
 	}
 	$http.get('public/data/products/televisions.json').success(function (data) {
+		$scope.technology = data;
+	});
+});
+// Laptops Controller
+xerorexControllers.controller('laptopsCtrl', function ($scope, $http, $sce) {
+	$scope.toTrustedHtml = function (html) {
+		return $sce.trustAsHtml(html);
+	}
+	$http.get('public/data/products/laptops.json').success(function (data) {
 		$scope.technology = data;
 	});
 });

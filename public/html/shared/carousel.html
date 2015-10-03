@@ -1,13 +1,12 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li ng-repeat="item in carouselItems track by $index" data-target="#myCarousel" data-slide-to="{{$index}}" ng-class="{active: $index == 0}"></li>
+    <li ng-repeat="item in carousel.items track by $index" data-target="#myCarousel" data-slide-to="{{$index}}" ng-class="{active: $index == 0}"></li>
   </ol>
   <div class="carousel-inner" role="listbox">
-
-    <!-- NG-Repeat for each item -->
-    <div ng-repeat="item in carouselItems" class="item" ng-class="{active: $index == 0}">
-      <img ng-src="{{item.image}}">
+    <!-- NG-Repeat for each carousel item -->
+    <div ng-repeat="item in carousel.items" class="item" ng-class="{active: $index == 0}">
+      <img data-ng-src="{{item.image}}" />
       <div class="container">
         <div class="carousel-caption">
           <h1>{{item.header}}</h1>

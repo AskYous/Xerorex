@@ -18,6 +18,18 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 		controller: 'blueraysCtrl'
 	})
 
+	// Computing
+	.when('/Computing', {
+		templateUrl: 'public/html/shared/devices.html',
+		controller: 'computingCtrl'
+	})
+
+	// Laptops
+	.when('/Computing/Laptops', {
+		templateUrl: 'public.html/shared/devices.html',
+		controller: 'laptopsCtrl'
+	})
+
 	// Cameras
 	.when('/Cameras', {
 		templateUrl: 'public/html/shared/technology.html',
@@ -40,6 +52,12 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 	.when('/Televisions', {
 		templateUrl: 'public/html/shared/technology.html',
 		controller: 'televisionsCtrl'
+	})
+
+	// Laptops
+	.when('/Laptops', {
+		templateUrl: 'public/html/shared/technology.html',
+		controller: 'laptopsCtrl'
 	})
 
 	// Otherwise
