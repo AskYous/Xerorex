@@ -66,6 +66,12 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 		controller: 'memoryCtrl'
 	})
 
+	// Memory
+	.when('/Phones', {
+		templateUrl: 'public/html/shared/technology.html',
+		controller: 'phonesCtrl'
+	})
+
 	// Televisions
 	.when('/Televisions', {
 		templateUrl: 'public/html/shared/technology.html',

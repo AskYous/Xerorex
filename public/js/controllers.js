@@ -93,6 +93,15 @@ xerorexControllers.controller('memoryCtrl', function ($scope, $http, $sce) {
 		$scope.technology = data;
 	});
 });
+// Memory Controller
+xerorexControllers.controller('phonesCtrl', function ($scope, $http, $sce) {
+	$scope.toTrustedHtml = function (html) {
+		return $sce.trustAsHtml(html);
+	}
+	$http.get('public/data/products/phones.json').success(function (data) {
+		$scope.technology = data;
+	});
+});
 // Televisions Controller
 xerorexControllers.controller('televisionsCtrl', function ($scope, $http, $sce) {
 	$scope.toTrustedHtml = function (html) {
