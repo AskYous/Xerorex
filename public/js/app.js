@@ -18,7 +18,7 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 		controller: 'blueraysCtrl'
 	})
 
-	// Bluerays
+	// Cameras
 	.when('/Cameras', {
 		templateUrl: 'public/html/shared/technology.html',
 		controller: 'camerasCtrl'
@@ -26,7 +26,7 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 
 	// Home Appliances
 	.when('/HomeAppliances', {
-		templateUrl: 'public/html/shared/devices.html',
+		templateUrl: 'public/html/shared/technology.html',
 		controller: 'homeAppliancesCtrl'
 	})
 

@@ -40,9 +40,8 @@ xerorexControllers.controller('homeAppliancesCtrl', function ($scope, $http, $sc
 	$scope.toTrustedHtml = function (html) {
 		return $sce.trustAsHtml(html);
 	}
-	$http.get('public/data/devices/homeAppliances.json').success(function (data) {
-		$scope.carouselItems = data.carouselItems;
-		$scope.featurettes = data.featurettes;
+	$http.get('public/data/products/homeAppliances.json').success(function (data) {
+		$scope.technology = data;
 	});
 });
 // Televisions Controller
