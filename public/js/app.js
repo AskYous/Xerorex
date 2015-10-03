@@ -54,16 +54,22 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 		controller: 'homeTheaterCtrl'
 	})
 
+	// Laptops
+	.when('/Laptops', {
+		templateUrl: 'public/html/shared/technology.html',
+		controller: 'memoryCtrl'
+	})
+
+	// Memory
+	.when('/Memory', {
+		templateUrl: 'public/html/shared/technology.html',
+		controller: 'memoryCtrl'
+	})
+
 	// Televisions
 	.when('/Televisions', {
 		templateUrl: 'public/html/shared/technology.html',
 		controller: 'televisionsCtrl'
-	})
-
-	// Laptops
-	.when('/Laptops', {
-		templateUrl: 'public/html/shared/technology.html',
-		controller: 'laptopsCtrl'
 	})
 
 	// Otherwise
