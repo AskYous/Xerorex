@@ -7,11 +7,11 @@
 			"columns": [
 				{
 						"title": "LED Eco Light",
-						"image": "public/img/led lights/LED Eco Light.jpg",
+						"image": "public/img/led/LED Eco Light.jpg",
 						"description": "Product Summary"
 				},{
 						"title": "LED Round Bulb",
-						"image": "public/img/led lights/LED Round Bulb.jpg",
+						"image": "public/img/led/LED Round Bulb.jpg",
 						"description": "Product Summary"
 				}
 			]

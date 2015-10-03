@@ -31,6 +31,12 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 	})
 
 	// Laptops
+	.when('/LED', {
+		templateUrl: 'public/html/shared/technology.html',
+		controller: 'ledCtrl'
+	})
+
+	// Laptops
 	.when('/Computing/Desktops', {
 		templateUrl: 'public/html/shared/technology.html',
 		controller: 'desktopsCtrl'
