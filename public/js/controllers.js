@@ -48,6 +48,15 @@ xerorexApp.controller('computingCtrl', function ($scope, $http, $sce) {
 		console.log(data);
 	});
 });
+// Desktops Controller
+xerorexControllers.controller('desktopsCtrl', function ($scope, $http, $sce) {
+	$scope.toTrustedHtml = function (html) {
+		return $sce.trustAsHtml(html);
+	}
+	$http.get('public/data/products/desktops.json').success(function (data) {
+		$scope.technology = data;
+	});
+});
 // Home Appliances Controller
 xerorexControllers.controller('homeAppliancesCtrl', function ($scope, $http, $sce) {
 	$scope.toTrustedHtml = function (html) {
@@ -66,21 +75,21 @@ xerorexControllers.controller('homeTheaterCtrl', function ($scope, $http, $sce) 
 		$scope.technology = data;
 	});
 });
-// Televisions Controller
-xerorexControllers.controller('televisionsCtrl', function ($scope, $http, $sce) {
-	$scope.toTrustedHtml = function (html) {
-		return $sce.trustAsHtml(html);
-	}
-	$http.get('public/data/products/televisions.json').success(function (data) {
-		$scope.technology = data;
-	});
-});
 // Laptops Controller
 xerorexControllers.controller('laptopsCtrl', function ($scope, $http, $sce) {
 	$scope.toTrustedHtml = function (html) {
 		return $sce.trustAsHtml(html);
 	}
 	$http.get('public/data/products/laptops.json').success(function (data) {
+		$scope.technology = data;
+	});
+});
+// Televisions Controller
+xerorexControllers.controller('televisionsCtrl', function ($scope, $http, $sce) {
+	$scope.toTrustedHtml = function (html) {
+		return $sce.trustAsHtml(html);
+	}
+	$http.get('public/data/products/televisions.json').success(function (data) {
 		$scope.technology = data;
 	});
 });

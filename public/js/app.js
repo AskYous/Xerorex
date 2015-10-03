@@ -26,8 +26,14 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 
 	// Laptops
 	.when('/Computing/Laptops', {
-		templateUrl: 'public.html/shared/devices.html',
+		templateUrl: 'public/html/shared/technology.html',
 		controller: 'laptopsCtrl'
+	})
+
+	// Laptops
+	.when('/Computing/Desktops', {
+		templateUrl: 'public/html/shared/technology.html',
+		controller: 'desktopsCtrl'
 	})
 
 	// Cameras
