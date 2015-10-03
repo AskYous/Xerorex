@@ -1,0 +1,48 @@
+{
+	"title": "Security",
+	"subtitle": "Product Summary",
+	"rows": [
+		{
+			"title": "",
+			"columns": [
+				{
+						"title": "XM-2104 50fps NVR",
+						"image": "public/img/Security/XM-2104 50fps NVR.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-2121 1.3 MP",
+						"image": "public/img/Security/XM-2121 1.3 MP.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-2224 1080P@300fps NVR",
+						"image": "public/img/Security/XM-2224 1080P@300fps NVR.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-2332 3.0 MP",
+						"image": "public/img/Security/XM-2332 3.0 MP.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-2334 3.0 MP",
+						"image": "public/img/Security/XM-2334 3.0 MP.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-2824 NVR",
+						"image": "public/img/Security/XM-2824 NVR.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-3108 HDD NVR",
+						"image": "public/img/Security/XM-3108 HDD NVR.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-3220 2.0 MP",
+						"image": "public/img/Security/XM-3220 2.0 MP.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM-3231 2.0 MP",
+						"image": "public/img/Security/XM-3231 2.0 MP.jpg",
+						"description": "Product Summary"
+				}
+			]
+		}
+	]
+}
