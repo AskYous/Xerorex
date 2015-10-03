@@ -1,0 +1,24 @@
+{
+	"title": "Tablets",
+	"subtitle": "Product Summary",
+	"rows": [
+		{
+			"title": "",
+			"columns": [
+				{
+						"title": "XG 300 Android Tab",
+						"image": "public/img/Tablets/XG 300 Android Tab.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XG 802 Android Tab",
+						"image": "public/img/Tablets/XG 802 Android Tab.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XV 599 Tab",
+						"image": "public/img/Tablets/XV 599 Tab.jpg",
+						"description": "Product Summary"
+				}
+			]
+		}
+	]
+}
