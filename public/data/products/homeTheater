@@ -1,0 +1,20 @@
+{
+	"title": "Home Theater and Audio",
+	"subtitle": "Product Summary",
+	"rows": [
+		{
+			"title": "",
+			"columns": [
+				{
+						"title": "XM 8000 Home Audio System",
+						"image": "public/img/Home Theater and Audio/XM 8000 Home Audio System.jpg",
+						"description": "Product Summary"
+				},{
+						"title": "XM 8500 Home Audio System",
+						"image": "public/img/Home Theater and Audio/XM 8500 Home Audio System.jpg",
+						"description": "Product Summary"
+				}
+			]
+		}
+	]
+}
