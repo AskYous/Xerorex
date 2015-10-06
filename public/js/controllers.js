@@ -138,3 +138,12 @@ xerorexControllers.controller('securityCtrl', function ($scope, $http, $sce) {
 		$scope.technology = data;
 	});
 });
+// Security Controller
+xerorexControllers.controller('wearablesCtrl', function ($scope, $http, $sce) {
+	$scope.toTrustedHtml = function (html) {
+		return $sce.trustAsHtml(html);
+	}
+	$http.get('public/data/products/wearables.json').success(function (data) {
+		$scope.technology = data;
+	});
+});

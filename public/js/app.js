@@ -96,6 +96,12 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 		controller: 'securityCtrl'
 	})
 
+	// Security
+	.when('/Wearables', {
+		templateUrl: 'public/html/shared/technology.html',
+		controller: 'wearablesCtrl'
+	})
+
 	// Otherwise
 	.otherwise({
 		redirectTo: '/' //URL doesn't exist
