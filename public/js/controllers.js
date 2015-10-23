@@ -1,5 +1,5 @@
 var xerorexControllers = angular.module('xerorexControllers', []);
-
+// Home Controller
 xerorexControllers.controller('homeController', function ($scope, $http) {
 	$http.get('public/data/homepage/carousel-items.json').success(function (data) {
 		$scope.carousel = {
@@ -13,12 +13,63 @@ xerorexControllers.controller('homeController', function ($scope, $http) {
 		$scope.featurettes = data;
 	});
 });
+// About Controller
+xerorexControllers.controller('aboutCtrl', function ($scope) {
+	$scope.view = {
+		"title": {
+			"title": "Xerorex",
+			"subtitle": "Building a better world, today."
+		},
+		"description": {
+			"sections": [{
+				"title": "About Xerorex",
+				"paragraphs": [
+					"For decades wonderful new products have been made by our manufacturing machine. Today, we pride ourselves in doing our part to make the world a better place. We bring our global customers the latest products made through innovation and bright ideas. Our diverse business platforms span consumer electronics, technology, software applications, medicinal devices, digital media, home appliances, fashion, and the latest wearable health devices.",
+					"Through living the experience of life ourselves, our talented workforce works hard on innovative ideas and beautiful products, using reliable partners to push life into new dimensions, and allow our customers to experience the world."
+				]
+			}, {
+				"title": "XeroreX Philosophy",
+				"paragraphs": [
+					"Based on our love for humanity, high standards for human ethics and the feeling of shared responsibility, we strive to become the ideal global citizen corporation.",
+					"Our workforce is our pillar of excellence, our customers are our pillars to success, and our partners are our pillar to make the connection between the two.",
+					"Our workforce brings things to life and brings happiness to our customers. Talented employees feel at home and they go to work for our customers on daily basis. Our employees are empowered to serve our customers.",
+					"We follow a simple and clear strategy that if we build a product, we build it great the first time."
+				]
+			}, {
+				"title": "XeroreX Values",
+				"paragraphs": [
+					"Integrity, Innovation, Excellence, High quality, and the sky is no limit."
+				]
+			}, {
+				"title": "XeroreX Vision",
+				"paragraphs": [
+					"XeroreX builds innovative products that enhance people’s lives. Making a profit is only a side effect of that."
+				]
+			}, {
+				"title": "XeroreX Performance",
+				"paragraphs": [
+					"Is measured by our customers’ love for our products."
+				]
+			}, {
+				"title": "XeroreX History",
+				"paragraphs": [
+					"Three decades of innovation, invention, and manufacturing experience."
+				]
+			}, {
+				"title": "XeroreX Vision 2020",
+				"paragraphs": [
+					"Let our customers propel us to the front by building them innovative products they need for a better and happier life."
+				]
+			}]
+		}
+	};
+})
 // Site Controller
 xerorexControllers.controller('siteController', function ($scope, $http) {
 	$http.get('public/data/homepage/menu-items.json').success(function (data) {
 		$scope.menuItems = data;
 	});
-})
+});
 // Bluerays Controller
 xerorexApp.controller('blueraysCtrl', function ($scope, $http, $sce) {
 	$scope.toTrustedHtml = function (html) {

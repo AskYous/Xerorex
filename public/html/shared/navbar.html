@@ -14,7 +14,7 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li ng-repeat="item in menuItems" ng-class="{dropdown: item.menuItems.length}">
+              <li ng-repeat="item in menuItems.left" ng-class="{dropdown: item.menuItems.length}">
                 <a href="{{item.href}}" ng-hide="item.menuItems" target="_self">{{item.title}}</a>
                 <a href="#" ng-show="item.menuItems" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" target="_self">{{item.title}} <span class="caret"></span></a>
                 <ul ng-show="item.menuItems" class="dropdown-menu" role="menu">
@@ -22,6 +22,11 @@
                     <a href="{{subItem.href}}" target="_self">{{subItem.title}}</a>
                   </li>
                 </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+              <li data-ng-repeat="item in menuItems.right">
+                <a href="{{item.href}}">{{item.title}}</a>
               </li>
             </ul>
           </div>

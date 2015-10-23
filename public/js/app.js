@@ -12,6 +12,11 @@ xerorexApp.config(['$routeProvider', function ($routeProvider) {
 		templateUrl: 'public/html/homepage/index.html',
 	})
 
+	.when('/About', {
+		controller: 'aboutCtrl',
+		templateUrl: 'public/html/about/about.html'
+	})
+
 	// Bluerays
 	.when('/Bluerays', {
 		templateUrl: 'public/html/shared/technology.html',
