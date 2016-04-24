@@ -66,9 +66,13 @@ xerorexControllers.controller('aboutCtrl', function ($scope) {
 })
 // Site Controller
 xerorexControllers.controller('siteController', function ($scope, $http) {
-	$http.get('public/data/homepage/menu-items.json').success(function (data) {
-		$scope.menuItems = data;
+	$http.get('http://admin.xerorex.com/private/data/technologies/read.php').success(function (response) {
+		$scope.technologies = response;
+		console.log(response);
 	});
+	$scope.getHref = function (object) {
+		return object.href ? object.href : object.title.replace(" ", "");
+	}
 });
 // Bluerays Controller
 xerorexApp.controller('blueraysCtrl', function ($scope, $http, $sce) {
